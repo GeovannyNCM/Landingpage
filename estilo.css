@@ -1,0 +1,232 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+/*AGREANDO ESTILOS AL HEADER.*/
+.hero{
+    background-image: linear-gradient(120deg, rgba(132, 250, 175, 0.555) 0%, rgba(143, 210, 244, 0.514) 100%), url("concert.jpg") ;
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+/*Efecto wave*/
+.textos-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Dar estilo al texto principal.*/
+.textos-hero h1{
+    font-size: 60px;
+    text-shadow: 0px 6px 5px black;
+   }
+
+.textos-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow: 0px 6px 5px black;
+}
+
+/*editar todo los elementos a y convertirlos en bloques.*/
+.textos-hero a{
+    display: inline-block;
+    text-decoration: none;
+    /*Propiedades del bloque*/
+    padding: 12px 15px;
+    background: #fff;
+    border-radius: 10px;
+    color: black;
+    }
+/*fijar el svg y fijarlo para cambiarle el color nos dirigimos al html y cambiamios el color*/
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/*estilos generales*/
+.contenedor, .wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+/*Agregar espacios entre secciones*/
+.contenedor{
+    padding: 80px 0px;
+}
+/*Estilos a los titulos*/
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo.left{
+    text-align: left;
+}
+.titulo.left{
+    text-align: left;
+}
+
+/*SECTION*/
+.website{
+    display: flex; /*para poner elementos uno a lado de otro*/
+    justify-content: space-between;/*espacios entre los elementos*/
+}
+
+.website img{
+    width: 25%; /*modificar el tamaño de la imagen*/
+}
+
+.website .contenedor-textos-main{
+    width: 63%; /*modificar el tamaño del texto*/
+}
+/*editar los parrafos*/
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/*edición de botones cta*/
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background: black;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/*FRASE O INFORMACIÓN*/
+.info{
+    background: linear-gradient(#84fab0, #8fd3f4);
+}
+
+/*Cards*/
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /*Espacio de manera equitativa*/
+    flex-wrap: wrap;/*se acomenden*/
+}
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card i{ /*Propiedad i edición de los iconos */
+    margin: 30px 0px 20px 0px;
+    font-size: 50px;
+}
+
+.card p{ /*Propiedad p edición de los textos */
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+/*GALERIA*/
+.galeria{
+    background: rgb(190, 189, 189);
+}
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+/*INFORMACIÓN FINAL*/
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.last-section img{
+    width: 48%;
+}
+.last-section .contenedor-textos-main{
+    width: 40%;
+}
+
+/*FOOTER*/
+footer{
+    background: #84fab0;
+    color: black;
+}
+
+/*Formulario*/
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid black;
+    padding: 12px 10px;
+}
+.input::placeholder{
+    color: black;
+    font-family: 'raleway';
+}
+input[type="text"],
+input[type="email"]{
+    display: inline-block;
+    width:  49%;
+    margin-bottom: 2%;
+}
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+.input[type="submit"]:hover{
+    cursor: pointer;
+    color: #84fab0;
+    background: black;
+}
